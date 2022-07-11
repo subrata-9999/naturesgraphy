@@ -1,0 +1,428 @@
+::-webkit-scrollbar{
+  display: none;
+} 
+
+*{
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+/* 
+header{
+  
+  position: relative;
+  margin: 1rem auto;
+  left: 10.5rem;
+  padding: 2rem;
+} */
+
+.container_head{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.logo {  
+  border-radius: 50%;
+  width: 17%;
+} 
+
+.name{
+  font-size: 5.5vw;
+  position: sticky;
+  float: left;
+  width: 100%;
+}
+
+.header
+    {
+    float: left;
+    width: 50%;
+    } 
+
+
+
+.image-background{
+    background-size: 200%;
+}
+
+
+.slogan{
+  font-size:2vw;
+  position: relative;
+  color: rgb(243, 243, 4);
+  float: right; 
+  padding-bottom: 3%;
+}
+
+
+h1 {
+    padding-left: 0.5%;
+    left: 50%;
+    font-family: oblique;
+    font-style: normal;
+    text-shadow: 3px 3px 6px #f00;
+    color: transparent;
+    animation: effect 2s linear infinite;
+       
+   }
+
+   @keyframes effect {
+         0% {
+           color: pink;
+         }
+         10% {
+   
+           color: pink;
+         }
+
+         20% {
+           
+           color: #31e1be;
+         }
+         
+         40% {
+           
+           color: rgb(198, 17, 214);
+         }
+         
+         60% {
+           
+           color: #048ae3;
+         }
+         80% {
+       
+           color: #f1c40f;
+         }
+         
+         100% {
+           
+           color: pink;
+         }
+    }
+.logo-container{
+  display: flex;
+}
+
+.first_para{
+  color: rgb(243, 240, 240);
+  padding-right: 4%;
+  padding-left: 4%;
+  text-align: center;
+  display: inline-block;
+  text-align: justify;
+}
+.second_para{
+  color: white; 
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: justify;
+}
+@media screen and (min-width: 601px){
+
+  .first_para{
+    font-size: 30px;
+  }
+  .second_para{
+    font-size: 30px;;
+  }
+}
+@media screen and (max-width: 600px){
+
+  .first_para{
+    font-size: 20px;
+  }
+  .second_para{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+    .threepic
+    {width: 33.2%;
+    float: left;
+    padding : 3%;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    
+    border: rgba(0,0,0,0.3);
+    }
+    
+
+.fourpic
+    {
+    float: left;
+    padding : 3%;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    width: 25%;
+    border: rgba(0,0,0,0.3);
+    } 
+
+    .threepic:hover, .fourpic:hover{
+      background-color: rgba(135, 164, 172, 0.5);
+     }
+
+   button{
+          width: 13em;
+          font-size: 1.3vw;
+           padding: 16px 0;
+           text-align: center;
+           margin: 20px 10px;
+           border-radius: 25px;
+           font-weight: bold;
+           border: 1px solid #dadcdc;
+           background-color: rgba(33, 203, 203, 0.484);
+           color:rgb(245, 248, 245);
+           cursor: pointer;
+           position: relative;
+           overflow: hidden;  
+       }
+
+       /*
+       button{
+          width: 13em;
+          font-size: 1.2vw;
+           padding: 16px 0;
+           text-align: center;
+           margin: 20px 10px;
+           border-radius: 25px;
+           font-weight: bold;
+           border: 1px solid #dadcdc;
+           background: transparent;
+           color:rgb(245, 248, 245);
+           cursor: pointer;
+           position: relative;
+           overflow: hidden;  
+       }
+       */
+
+    span{
+           background: #2614f4;
+           height: 100%;
+           width: 0;
+           border-radius: 25px;
+           position: absolute;
+           left: 0;
+           bottom: 0;
+           z-index: -1;
+           transition: 0.5s;
+           text-align: justify;
+       }
+
+       .d-flex {
+        display: flex!important;
+        justify-content: center;
+        }
+        
+       button:hover span{
+           width: 100%;
+       }
+       button:hover{
+           border:none;
+       }
+
+       .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+ 
+       .pic_heading{
+        color: white; 
+        font-size: 2.4vw; 
+        padding-left: 4%;
+       }
+
+       .image_container{
+        display: flex;
+        flex-direction: row;
+        max-width: 48px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       @media (max-width:800px){
+         .picture_position{
+           flex-direction: column;
+         }
+       }
+      
+.image_container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-evenly;
+
+}
+.item{
+  
+  margin: 5px;
+}
+
+       .human{
+        width: 25vw;
+        height: 20vw;
+        object-fit: cover;
+        object-position: bottom;
+        padding: 3px;
+       }
+      
+
+       .gallery_logo{
+         margin-top: 3%;
+         border-radius: 50%;
+         position: relative;
+         width: 15%;
+       }
+       table{
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px;
+        color: #fff;
+    }
+
+    .signinback{
+        background-color: rgba(0,0,0,0.5);
+        width: 50%;
+        left: 50%;
+        right: 50%;
+        background-position: center;
+        text-align-last: center;
+    }
+
+    h5{
+        color: rgb(250, 250, 251);
+        font-size: 1.3vw;
+    }
+
+    .statement{
+        color: rgba(1, 2, 0, 0.84);
+    }
+    
+    option{
+        color: rgb(0, 0, 5);
+    }
+
+
+    @media screen and (max-width:600px) {
+      
+      header{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+    .gallery_link{
+      padding-left: 4%;
+      color: white;
+    }
+    .maindiv_street{
+      height: 30vw;
+      width: 60vw;
+      
+      position: relative;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%);
+      background-image: url('Street1.jpg');
+      background-size: 100% 100%;
+      animation: slider1 12s infinite;
+
+    }
+    @keyframes slider1{
+      0%{
+          background-image: url('Street1.jpg');
+      }
+      34%{
+          background-image: url('Street2.jpg');
+      }
+      68%{
+          background-image: url('Street3.jpg');
+      }
+    }
+
+    .maindiv_flower{
+      height: 30vw;
+      width: 60vw;
+      
+      position: relative;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%);
+      background-image: url('flowers_1.jpg');
+      background-size: 100% 100%;
+      animation: slider2 12s infinite;
+
+
+    }
+    @keyframes slider2{
+      0%{
+          background-image: url('flowers_1.jpg');
+      }
+      34%{
+          background-image: url('flowers_2.jpg');
+      }
+      68%{
+          background-image: url('flowers_3.jpg');
+      }
+    }
+
+
+  .login{  
+  
+          width: 400px;  
+  
+          overflow: hidden;  
+  
+          margin: auto;  
+  
+          margin: 20 0 0 450px;  
+  
+          padding: 80px;  
+  
+          background: #1d232c;  
+  
+          border-radius: 15px ;  
+  
+  }
+  
+  label{  
+    color: #e8e529;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+  text-align: center;
+    width: 240px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+  
+  
+}
